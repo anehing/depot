@@ -1,20 +1,24 @@
-<div id="product_list" >
-	<h1>Listing Procucts</h1>
- 	<table border="1">
- 		<tr>
- 			<td><strong>Title:</strong></td>
-	        <td><strong>Description:</strong></td>
-	        <td><strong>Image url:</strong></td>
-	        <td><strong>Price:</strong></td>	
- 		</tr>	
-        <tr>
-        	<td><%= @product.title %></td>
-        	<td><%= @product.description %></td>
-	        <td><%= @product.image_url %></td>
-	        <td><%= @product.price %></td>	
-        </tr>
- 	</table>
-<br/>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @product.image_url %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
