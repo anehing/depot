@@ -8,7 +8,8 @@
 #---
 class StoreController < ApplicationController
   def index
-    @products = Product.order(:title)
+    @products = Product.all
+    @cart = current_cart
   end
   # POST /line_items
   # POST /line_items.json
